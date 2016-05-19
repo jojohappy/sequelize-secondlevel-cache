@@ -1,0 +1,33 @@
+{
+  "name": "sequelize-secondlevel-cache",
+  "version": "0.0.1",
+  "description": "A write-through and read-through caching library, support only Sequelize 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha -b --reporter list 'test/**/*.test.js'"
+  },
+  "keywords": [
+    "Sequelize",
+    "redis",
+    "cache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jojohappy/sequelize-secondlevel-cache.git"
+  },
+  "dependencies": {
+    "lodash": "^4.12.0",
+    "ioredis": "^1.15.1",
+    "bluebird": "^3.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2",
+    "sinon": "^1.17.3",
+    "istanbul": "^0.4.2",
+    "sqlite3": "^3.1.4",
+    "sequelize": "^3.3.2"
+  },
+  "author": "Michael Dai",
+  "license": "MIT"
+}
