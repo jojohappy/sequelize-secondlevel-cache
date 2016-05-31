@@ -63,6 +63,9 @@ describe('Sequelize-secondlevel-cache', function() {
       should.exist(sequelize.cacheStore);
       should.exist(sequelize.cacheInstance);
       should.exist(sequelize.cacheManager);
+      should.exist(sequelize.options.cachePrefix);
+      sequelize.options.cachePrefix.should.equal('seq_cache');
+      sequelize.options.cacheStore.should.equal('redis');
       done();
     });
 
